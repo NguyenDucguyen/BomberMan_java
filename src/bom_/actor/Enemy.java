@@ -1,12 +1,6 @@
 
 package bom_.actor;
 
-import static bom_.actor.ActorObject.DOWN;
-import static bom_.actor.ActorObject.LEFT;
-import static bom_.actor.ActorObject.RIGHT;
-import static bom_.actor.ActorObject.UP;
-import static bom_.mapObject.MapObject.FIRE_LONG;
-
 import java.awt.Image;
 import java.awt.Rectangle;
 import javax.swing.ImageIcon;
@@ -17,6 +11,9 @@ import bom_.mapObject.MapObject;
 
 public class Enemy extends ActorObject
 {
+    public static int ENEMY_1 = 7;
+    public static int ENEMY_2 = 8;
+
     public Image enemy_1,enemy_2;
     public static int Enemy_count = 0;
     public Enemy(int x, int y, String image, int direction, int type) {
@@ -33,12 +30,12 @@ public class Enemy extends ActorObject
             case DOWN:
                 {
                     if(type == ENEMY_1){  
-                      ImageIcon enemy_1 = new ImageIcon("monster_down.png");
+                      ImageIcon enemy_1 = new ImageIcon("source/image/monster_down.png");
                       this.image = enemy_1.getImage();
                     }
                     else if(type == ENEMY_2)
                     {
-                      ImageIcon enemy_2 = new ImageIcon("boss_down.png");
+                      ImageIcon enemy_2 = new ImageIcon("source/image/boss_down.png");
                       this.image = enemy_2.getImage();
                     }
                 }
@@ -46,12 +43,12 @@ public class Enemy extends ActorObject
             case UP:
                 {
                     if(type == ENEMY_1){  
-                      ImageIcon enemy_1 = new ImageIcon("monster_up.png");
+                      ImageIcon enemy_1 = new ImageIcon("source/image/monster_up.png");
                       this.image = enemy_1.getImage();
                     }
                     else if(type == ENEMY_2)
                     {
-                      ImageIcon enemy_2 = new ImageIcon("boss_up.png");
+                      ImageIcon enemy_2 = new ImageIcon("source/image/boss_up.png");
                       this.image = enemy_2.getImage();
                     }
                 }
@@ -59,12 +56,12 @@ public class Enemy extends ActorObject
             case LEFT:
                 {
                     if(type == ENEMY_1){  
-                      ImageIcon enemy_1 = new ImageIcon("monster_left.png");
+                      ImageIcon enemy_1 = new ImageIcon("source/image/monster_left.png");
                       this.image = enemy_1.getImage();
                     }
                     else if(type == ENEMY_2)
                     {
-                      ImageIcon enemy_2 = new ImageIcon("boss_left.png");
+                      ImageIcon enemy_2 = new ImageIcon("source/image/boss_left.png");
                       this.image = enemy_2.getImage();
                     }
                 }
@@ -72,12 +69,12 @@ public class Enemy extends ActorObject
             case RIGHT:
                 {
                     if(type == ENEMY_1){  
-                      ImageIcon enemy_1 = new ImageIcon("monster_right.png");
+                      ImageIcon enemy_1 = new ImageIcon("source/image/monster_right.png");
                       this.image = enemy_1.getImage();
                     }
                     else if(type == ENEMY_2)
                     {
-                      ImageIcon enemy_2 = new ImageIcon("boss_right.png");
+                      ImageIcon enemy_2 = new ImageIcon("source/image/boss_right.png");
                       this.image = enemy_2.getImage();
                     }
                 }

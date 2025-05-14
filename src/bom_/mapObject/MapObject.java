@@ -13,8 +13,6 @@ public class MapObject
     public static int FIRE_SHORT = 4;
     public static int FIRE_LONG = 5;
     public static int BOMBER = 6;
-    public static int ENEMY_1 = 7;
-    public static int ENEMY_2 = 8;
     public static int ACTOR = 9;
     
     public static int ITEM_1 = 10;
