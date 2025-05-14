@@ -15,10 +15,10 @@ public class Bom_ extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        //Map map = new Map(level, countLevel, score);
-        //add(map);
+        Map map = new Map(level, countLevel, score);
+        add(map);
 
-        Thread thread = new Thread();
+        Thread thread = new Thread(map);
         thread.start();
 
         // Đảm bảo giao diện chạy trên EDT

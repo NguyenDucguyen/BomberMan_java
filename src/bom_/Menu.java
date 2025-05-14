@@ -126,7 +126,7 @@ public class Menu extends JFrame {
         menu.stop();
         dispose();               // Giải phóng menu để tránh chạy song song
         Bom_ bom_ = new Bom_();
-        bom_.makeGUI("LV2.txt", 1, 0);
+        bom_.makeGUI("source/map/LV1.txt", 1, 0);
         bom_.setVisible(true);   // Hiển thị game
     }//GEN-LAST:event_jButton1ActionPerformed
 
